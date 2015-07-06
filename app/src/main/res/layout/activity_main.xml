@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!-- 定義第一個TbaleLayout，指定第二列允許收縮，第三列允許拉伸 -->
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="1"
+        android:stretchColumns="2">
+        <!-- 直接添加按鈕，他自己會佔一行 -->
+        <Button
+            android:id="@+id/ok1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="獨自一行的按鈕" />
+        <!-- 添加一個Row -->
+        <TableRow>
+            <!-- 為Table添加三個按鈕 -->
+            <Button
+                android:id="@+id/ok2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="普通按钮" />
+
+            <Button
+                android:id="@+id/ok3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收缩的按钮" />
+
+            <Button
+                android:id="@+id/ok4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拉伸的按钮" />
+        </TableRow>
+    </TableLayout>
+    <!-- 定義第二個TbaleLayout，指定第二列隐藏-->
+    <TableLayout
+        android:id="@+id/TableLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="1">
+        <!-- 直接添加按鈕，他自己會佔一行 -->
+        <Button
+            android:id="@+id/ok5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 獨自一行的按鈕 " />
+        <!-- 添加一個Row -->
+        <TableRow>
+            <!-- 為Table添加三個按鈕 -->
+            <Button
+                android:id="@+id/ok6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="普通按钮1" />
+
+            <Button
+                android:id="@+id/ok7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="被隐藏的按钮" />
+
+            <Button
+                android:id="@+id/ok8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="普通按钮 3" />
+        </TableRow>
+    </TableLayout>
+    <!-- 定義第二個TbaleLayout，指定第二、三列可以被拉伸-->
+    <TableLayout
+        android:id="@+id/TableLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+        <!-- 直接添加按鈕，他自己會佔一行 -->
+        <Button
+            android:id="@+id/ok9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="獨自一行的按鈕" />
+        <!-- 添加一個Row -->
+        <TableRow>
+            <!-- 為Table添加三個按鈕 -->
+            <Button
+                android:id="@+id/ok10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="普通按钮" />
+
+            <Button
+                android:id="@+id/ok11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拉伸的按钮" />
+
+            <Button
+                android:id="@+id/ok12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拉伸的按钮" />
+        </TableRow>
+        <!--添加一個Row-->
+        <TableRow>
+            <!-- 為Table添加二個按鈕 -->
+            <Button
+                android:id="@+id/ok13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="普通按钮" />
+
+            <Button
+                android:id="@+id/ok14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拉伸的按钮" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
